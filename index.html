@@ -8,54 +8,102 @@
   </head>
   <body>
     <div class="wrapper">
+      <div class="table-content">
       <div>
        <h1>VaynerMedia Data Science Front-End Challenge</h1>
       </div>
-      <div class="Table">
-        <div class="Title">
-            <p>User 1</p>
-        </div>
-            <div class="Heading">
-                <div class="Cell">
-                    <p>Album Id</p>
-                </div>
-                <div class="Cell">
-                    <p>Album Title</p>
-                </div>
-            </div>
-            <div class="Row">
-                <div class="Cell">
-                  <div class="user_1-id"></div>
-                </div>
-                <div class="Cell">
-                  <div class="user_1-title"></div>
-                </div>
-            </div>
-        </div>
-        <div class="Table">
-          <div class="Title">
-              <p>User 2</p>
-          </div>
-              <div class="Heading">
-                  <div class="Cell">
-                      <p>Album Id</p>
-                  </div>
-                  <div class="Cell">
-                      <p>Album Title</p>
-                  </div>
-              </div>
-              <div class="Row">
-                  <div class="Cell">
-                      <div class="user_2-id"></div>
-                  </div>
-                  <div class="Cell">
-                    <div class="user_2-title"></div>
-                  </div>
-              </div>
-          </div>
+      <div class="table-name">
+          <p>User 1</p>
       </div>
-
-
+          <div class="MyTable">
+          <div class="MyTable-Tr title">
+          <div class="MyTable-Td">Album Id</div>
+          <div class="MyTable-Td">Album Title</div>
+      </div>
+        <div class="MyTable-Tr">
+        <div class="MyTable-Td colored" ondrop="drop(event)" ondragover="allowDrop(event)"><h4 class="album-id" draggable="true" id="content" ondragstart="drag(event)"></h4></div>
+        <div class="MyTable-Td colored" ondrop="drop(event)" ondragover="allowDrop(event)"><h4 class="album-title" draggable="true" id="content" ondragstart="drag(event)"></h4></div>
+      </div>
+        <div class="MyTable-Tr">
+        <div class="MyTable-Td" ondrop="drop(event)" ondragover="allowDrop(event)"><h4 draggable="true" id="content" ondragstart="drag(event)"></h4></div>
+        <div class="MyTable-Td" ondrop="drop(event)" ondragover="allowDrop(event)"><h4 draggable="true" id="content" ondragstart="drag(event)"></h4></div>
+      </div>
+        <div class="MyTable-Tr">
+        <div class="MyTable-Td colored" ondrop="drop(event)" ondragover="allowDrop(event)"><h4 draggable="true" id="content" ondragstart="drag(event)"></h4></div>
+        <div class="MyTable-Td colored" ondrop="drop(event)" ondragover="allowDrop(event)"><h4 draggable="true" id="content" ondragstart="drag(event)"></h4></div>
+     </div>
+      <div class="MyTable-Tr">
+      <div class="MyTable-Td" ondrop="drop(event)" ondragover="allowDrop(event)"><h4 draggable="true" id="content" ondragstart="drag(event)"></h4></div>
+      <div class="MyTable-Td" ondrop="drop(event)" ondragover="allowDrop(event)"><h4 draggable="true" id="content" ondragstart="drag(event)"></h4></div>
+    </div>
+      <div class="MyTable-Tr">
+      <div class="MyTable-Td colored" ondrop="drop(event)" ondragover="allowDrop(event)"><h4 draggable="true" id="content" ondragstart="drag(event)"></h4></div>
+      <div class="MyTable-Td colored" ondrop="drop(event)" ondragover="allowDrop(event)"><h4 draggable="true" id="content" ondragstart="drag(event)"></h4></div>
+    </div>
+       <div class="MyTable-Tr">
+       <div class="MyTable-Td" ondrop="drop(event)" ondragover="allowDrop(event)"><h4 draggable="true" id="content" ondragstart="drag(event)"></h4></div>
+       <div class="MyTable-Td" ondrop="drop(event)" ondragover="allowDrop(event)"><h4 draggable="true" id="content" ondragstart="drag(event)"></h4></div>
+     </div>
+       <div class="MyTable-Tr">
+       <div class="MyTable-Td colored" ondrop="drop(event)" ondragover="allowDrop(event)"><h4 draggable="true" id="content" ondragstart="drag(event)"></h4></div>
+       <div class="MyTable-Td colored" ondrop="drop(event)" ondragover="allowDrop(event)"><h4 draggable="true" id="content" ondragstart="drag(event)"></h4></div>
+     </div>
+       <div class="MyTable-Tr">
+       <div class="MyTable-Td" ondrop="drop(event)" ondragover="allowDrop(event)"><h4 draggable="true" id="content" ondragstart="drag(event)"></h4></div>
+       <div class="MyTable-Td" ondrop="drop(event)" ondragover="allowDrop(event)"><h4 draggable="true" id="content" ondragstart="drag(event)"></h4></div>
+     </div>
+      <div class="MyTable-Tr">
+      <div class="MyTable-Td colored" ondrop="drop(event)" ondragover="allowDrop(event)"><h4 draggable="true" id="content" ondragstart="drag(event)"></h4></div>
+      <div class="MyTable-Td colored" ondrop="drop(event)" ondragover="allowDrop(event)"><h4 draggable="true" id="content" ondragstart="drag(event)"></h4></div>
+    </div>
+  </div>
+</div>
+    <div class="table-name">
+        <p>User 2</p>
+    </div>
+        <div class="MyTable">
+        <div class="MyTable-Tr title">
+        <div class="MyTable-Td">Album Id</div>
+        <div class="MyTable-Td">Album Title</div>
+    </div>
+      <div class="MyTable-Tr">
+      <div class="MyTable-Td colored" ondrop="drop(event)" ondragover="allowDrop(event)"><h4 draggable="true" id="content" ondragstart="drag(event)"></h4></div>
+      <div class="MyTable-Td colored" ondrop="drop(event)" ondragover="allowDrop(event)"><h4 draggable="true" id="content" ondragstart="drag(event)"></h4></div>
+    </div>
+      <div class="MyTable-Tr">
+      <div class="MyTable-Td" ondrop="drop(event)" ondragover="allowDrop(event)"><h4 draggable="true" id="content" ondragstart="drag(event)"></h4></div>
+      <div class="MyTable-Td" ondrop="drop(event)" ondragover="allowDrop(event)"><h4 draggable="true" id="content" ondragstart="drag(event)"></h4></div>
+    </div>
+      <div class="MyTable-Tr">
+      <div class="MyTable-Td colored" ondrop="drop(event)" ondragover="allowDrop(event)"><h4 draggable="true" id="content" ondragstart="drag(event)"></h4></div>
+      <div class="MyTable-Td colored" ondrop="drop(event)" ondragover="allowDrop(event)"><h4 draggable="true" id="content" ondragstart="drag(event)"></h4></div>
+   </div>
+    <div class="MyTable-Tr">
+    <div class="MyTable-Td" ondrop="drop(event)" ondragover="allowDrop(event)"><h4 draggable="true" id="content" ondragstart="drag(event)"></h4></div>
+    <div class="MyTable-Td" ondrop="drop(event)" ondragover="allowDrop(event)"><h4 draggable="true" id="content" ondragstart="drag(event)"></h4></div>
+  </div>
+    <div class="MyTable-Tr">
+    <div class="MyTable-Td colored" ondrop="drop(event)" ondragover="allowDrop(event)"><h4 draggable="true" id="content" ondragstart="drag(event)"></h4></div>
+    <div class="MyTable-Td colored" ondrop="drop(event)" ondragover="allowDrop(event)"><h4 draggable="true" id="content" ondragstart="drag(event)"></h4></div>
+  </div>
+     <div class="MyTable-Tr">
+     <div class="MyTable-Td" ondrop="drop(event)" ondragover="allowDrop(event)"><h4 draggable="true" id="content" ondragstart="drag(event)"></h4></div>
+     <div class="MyTable-Td" ondrop="drop(event)" ondragover="allowDrop(event)"><h4 draggable="true" id="content" ondragstart="drag(event)"></h4></div>
+   </div>
+     <div class="MyTable-Tr">
+     <div class="MyTable-Td colored" ondrop="drop(event)" ondragover="allowDrop(event)"><h4 draggable="true" id="content" ondragstart="drag(event)"></h4></div>
+     <div class="MyTable-Td colored" ondrop="drop(event)" ondragover="allowDrop(event)"><h4 draggable="true" id="content" ondragstart="drag(event)"></h4></div>
+   </div>
+     <div class="MyTable-Tr">
+     <div class="MyTable-Td" ondrop="drop(event)" ondragover="allowDrop(event)"><h4 draggable="true" id="content" ondragstart="drag(event)"></h4></div>
+     <div class="MyTable-Td" ondrop="drop(event)" ondragover="allowDrop(event)"><h4 draggable="true" id="content" ondragstart="drag(event)"></h4></div>
+   </div>
+    <div class="MyTable-Tr">
+    <div class="MyTable-Td colored" ondrop="drop(event)" ondragover="allowDrop(event)"><h4 draggable="true" id="content" ondragstart="drag(event)"></h4></div>
+    <div class="MyTable-Td colored" ondrop="drop(event)" ondragover="allowDrop(event)"><h4 draggable="true" id="content" ondragstart="drag(event)"></h4></div>
+  </div>
+  </div>
+</div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 

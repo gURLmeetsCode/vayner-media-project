@@ -1,4 +1,4 @@
-
+// Logic for API
 $("document").ready(function(){
 
 
@@ -9,14 +9,30 @@ $("document").ready(function(){
       // console.log('success', album);
       $.each(albums, function(index, album){
         if(album.userId == 1){
-          $('.user_1-id').append('<p> '+ album.id +' </p>');
-          $('.user_1-title').append('<p> '+ album.title + ' </p>');
+          $('.album-id').append('<h4> '+ album.id +' </h4>');
+          $('.album-title').append('<h4> '+ album.title + ' </h4>');
         }
         if(album.userId == 2){
-          $('.user_2-id').append('<p>'+ album.id +' </p>');
-          $('.user_2-title').append('<p> '+ album.title + ' </p>');
+          $().append('<h4>'+ album.id +' </h4>');
+          $().append('<h4> '+ album.title + ' </h4>');
         }
       });
     }
   });
 });
+
+// Logic for Drap and Drop functionality
+
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}

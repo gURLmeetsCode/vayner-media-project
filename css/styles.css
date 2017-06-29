@@ -2,7 +2,8 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.wrapper{
+.wrapper
+{
   padding-left: 18px;
   padding-right: 18px;
   overflow: hidden;
@@ -11,35 +12,38 @@
   margin-right: auto;
 }
 
+.table-name
+{
+  color: rgba(86, 138, 242, 0.9);
+  font-size: 1.75rem;
+  font-weight: 200;
+  text-align: center;
+}
 
-.Table
-   {
-       display: table;
-   }
-   .Title
-   {
-       display: table-caption;
-       text-align: center;
-       font-weight: bold;
-       font-size: larger;
-       color: rgba(86, 138, 242, 0.9);
+.MyTable
+{
+  display: table;
+}
 
-   }
-   .Heading
-   {
-       display: table-row;
-       font-weight: bold;
-       text-align: center;
-   }
-   .Row
-   {
-       display: table-row;
-   }
-   .Cell
-   {
-       display: table-cell;
-       border: solid;
-       border-width: thin;
-       padding-left: 5px;
-       padding-right: 5px;
-   }
+.MyTable-Tr
+{
+  display: table-row;
+}
+
+.MyTable .MyTable-Tr .MyTable-Td
+{
+  display: table-cell;
+  padding: 20px;
+  border-bottom: solid 1px #000;
+}
+
+.MyTable .title
+{
+  background-color: rgba(86, 138, 242, 0.9);
+  color: #FFF;
+}
+
+.colored
+{
+  background-color: grey;
+}
