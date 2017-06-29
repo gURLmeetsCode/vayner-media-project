@@ -1,4 +1,4 @@
-<!--  
+
 
 Bugs:
 
@@ -14,6 +14,3 @@ Challenges:
   Ideas:
   Change target div id to corresponding userId number.
   Use number to conditional logic in AJAX request to check and update table accordingly.
-
-
--->
