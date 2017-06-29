@@ -4,17 +4,15 @@
 
 .wrapper
 {
-  padding-left: 18px;
-  padding-right: 18px;
-  overflow: hidden;
-  max-width: 1236px;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  margin-left: 20px;
+  margin-right: : 20px;
+
 }
 
 .table-name
 {
-  color: rgba(86, 138, 242, 0.9);
+  color: rgba(0, 49, 79, 0.9);
   font-size: 1.75rem;
   font-weight: 200;
   text-align: center;
@@ -35,15 +33,21 @@
   display: table-cell;
   padding: 20px;
   border-bottom: solid 1px #000;
+  overflow: scroll;
 }
 
 .MyTable .title
 {
-  background-color: rgba(86, 138, 242, 0.9);
+  background-color: rgba(0, 49, 79, 0.9);
+  color: #FFF;
+}
+
+.hide
+{
   color: #FFF;
 }
 
 .colored
 {
-  background-color: grey;
+  background-color: rgba(141, 141, 141, 0.3);
 }
