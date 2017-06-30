@@ -2,6 +2,7 @@
 
 $("document").ready(function(){
 
+// var $user_id =  getElementById("drop_zone").children[i].id; cache for POST request.
 
   $.ajax({
     type: 'GET',
@@ -41,6 +42,9 @@ $("document").ready(function(){
           album_data_2.push("<h4 id=''"+index+"''>"+album.title+" </h4>");
          }
       });
+
+
+
       $('.album-id').append(album_data[0]);
       $('.album-title').append(album_data[1]);
       $('.album-id-2').append(album_data[2]);
@@ -81,23 +85,55 @@ $("document").ready(function(){
       $('.album-title-19').append(album_data_2[17]);
       $('.album-id-20').append(album_data_2[18]);
       $('.album-title-20').append(album_data_2[19]);
+    },
+    error: function(jqXHR, textStatus, errorThrown){
+        console.log('Error: ' + textStatus + ' - ' + errorThrown);
     }
   });
 });
 
+// Logic for updating userId
+
+
+// $('.MyTable-Tr').mousedown(function(){
+//   var albums_id = {
+//     userId = $user_id.val();
+//   }
+//   $.ajax({
+//  //      type: 'POST',
+//  //      data: "albums_id";
+//  //      url: "http://jsonplaceholder.typicode.com/albums",
+//  //      success: function(newAlbumId){
+//            if(newAlbum.id == 1){
+//               $('.album-id').append('<h4> '+ newAlbumId.id +' </h4>');
+//             }
+//            if(newAlbum.id == 2){
+//                $('.album-id-2').append('<h4> '+ newAlbumId.id +' </h4>');
+//             }
+//          }
+//     })
+// })
+
+
+
 // Logic for Drag and Drop functionality
+
+function _(id){
+  return document.getElementById(id);
+}
 
 function allowDrop(ev) {
     ev.preventDefault();
 }
-
+//
 function drag(ev) {
-    ev.dataTransfer.setData("text", ev.target.id);
-}
-
+       ev.dataTransfer.setData("text", ev.target.id);
+ }
+//
 function drop(ev) {
     ev.preventDefault();
-    // This is should not just pipe data from one table to the next. The selected target should update the table-row it is dropped on
-    var data = ev.dataTransfer.getData("text");
-    ev.target.appendChild(document.getElementById(data));
-}
+      var data = ev.dataTransfer.getData("text");
+      ev.target.appendChild( _(data));
+       _(data).removeAttribute("draggable", "class"); // node is not responding to method.
+      //  console.log(data);
+ }

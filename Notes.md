@@ -2,15 +2,24 @@
 
 Bugs:
 
-1) Style inheritance from drop. Styling fails when more than one element is added to the same row.
+1) Style inheritance from drop and event propagation. Styling fails when more than one element is added to the same row.
+
     Ideas:
-    Add style dynamically with addClass(). Unsure because various divs needs the property added.    
-    Destructively remove styling with removeAttr() or .css(). Working to figure out how these methods can work.
+    Destructively remove styling with removeAttr() or .css(). (this logic is not working!)
 
-Challenges:
+    Console Errors:
+    <!-- DOMException: Failed to execute 'appendChild' on 'Node': The new child element contains the parent. -->
 
-1) Working to come up with logic to update userId from drop.
 
-  Ideas:
-  Change target div id to corresponding userId number.
-  Use number to conditional logic in AJAX request to check and update table accordingly.
+2) Code test for updating userId is working asynchronously. As soon as the page loads, the AJAX request is fired. This is causing the remaining code to break.
+
+    Ideas:
+    wrap code in a promise and use await() to trigger AJAX request.
+    try using beforeSend callback.
+
+
+
+  Comments:
+
+  - Wanted to dynamically add drag and drop functionality from window.onload event to clean up css.
+  - Failed to find an improved way to append data from AJAX arrays. Current hard code is ugly and not performance compliant! Working to find a more elegant solution. Considered making a global variable to cache the data.
